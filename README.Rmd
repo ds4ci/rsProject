@@ -7,3 +7,5 @@ output: github_document
 
 Is both an example and a presentation of the basics of
 setting up a *project* in RStudio.
+
+The stand alone slide deck is _RStudio_Projects.html_ in the project root.

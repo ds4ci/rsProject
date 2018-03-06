@@ -11,18 +11,19 @@ March 6, 2017
 What We Will Cover
 ========================================================
 
-- Motivation
-- Directory Structure
+- Why Projects?
+- Directory Structures
 - Creating a New Project
 - Tying in Git & GitHub
-- Pure R vs R Notebooks
+- Preview of upcoming _R Packages_ talk
 - Wrap-up
 
-Motivation
+Why Projects?
 ========================================================
 type: section
 
 * Keep all project data together
+  * Including command history specific to project
 * Let RStudio handle working directory/folder location
   * Then use relative paths
   * For portable projects!
@@ -30,7 +31,7 @@ type: section
   * Not just for R code!
 * Stay tuned for creating packages
 
-Directory Structure
+Directory Structures
 ========================================================
 type: section
 
@@ -85,17 +86,26 @@ Using this project as the example.
 
 Creating the Project in RStudio
 ========================================================
-Once basic directory structure is set up...
+Once basic directory structure is set up,
+
+RStudio menu: File | New Project...
 
 ![Create New Project](figs/rsCreateNewProj.PNG)
 
+Add Some Code
+========================================================
 
+Create a new sample R Notebook from R Studio menu:
+Green + | R Notebook
+
+Save in the R folder as "SampleRNotebook.Rmd". Preview
+it. You should see something like:
+
+![R Folder](figs/R_FolderWithSampleRNotebook.PNG)
 
 Tying in Git & GitHub
 ========================================================
 type: section
-
-Gotcha: Git/GitHub repo == Single RStudo project
 
 Getting Git & GitHub
 ========================================================
@@ -105,6 +115,10 @@ To install Git see the R Studio article:
 https://support.rstudio.com/hc/en-us/articles/200532077
 
 If you need a GitHub account, sign up at https://github.com
+
+If you are new to Git & GitHub, watch Garrett Grolemund's excellent webinar:
+https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/
+
 
 Initial Git Commit
 ========================================================
@@ -116,12 +130,14 @@ Make a New Repo in Your GitHub
 ========================================================
 ![New Repo in GitHub](figs/GitHub_NewRepo.PNG)
 
-Copy Commands to Execuite in Local Shell
+Copy Commands to Execute in Local Shell
 ========================================================
 ![Get git commands](figs/GitHub_PushRepo.PNG)
 
-Run Commands to Link & Initialize GitHub Repo
+Run in Shell to Link & Initialize GitHub Repo
 ========================================================
+Open shell with RStudio menu Git | Gear | Shell...
+
 ![Initial Push in Shell](figs/GitShell_GitHubPushExisting.PNG)
 
 Resulting GitHub Repo
@@ -130,6 +146,7 @@ Resulting GitHub Repo
 
 Write README in R Markdown
 ========================================================
+<small>
 ```
 ---
 title: "README"
@@ -141,38 +158,72 @@ Is both an example and a presentation of the basics of
 setting up a *project* in RStudio.
 . . .
 ```
+</small>
 Save in the project root as README.Rmd and knit:
 
 ![knit README](figs/knitREADME.PNG)
+.
 
-Pure R vs R Notebooks
+Remember to Commit to Git/GitHub Often!
+========================================================
+![Invoke README commit](figs/README_InvokeCommit.PNG)
+
+![Commit README](figs/README_gitCommit.PNG)
+![Push README](figs/README2GitHub.PNG)
+
+Preview - R Packages
 ========================================================
 type: section
+
+An R Package is a specially formatted project.
+
+Coming up:
+
+Writing R packages to simplify the R world for you
+and your collegues.
+
+Then submit to CRAN for fame & fortune(?).
+
+
+
+Package Development Resources
+========================================================
+In the meantime, you can see...
+
+Garrett's webinar: https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-programming-part-3/
+
+The package development cheet sheet: https://github.com/rstudio/cheatsheets/raw/master/package-development.pdf
+
+Hadley's R Packages book: http://r-pkgs.had.co.nz/
+
 
 Wrap-up
 ========================================================
 type: section
 
-
-Slide With Code
+What We Covered
 ========================================================
 
+* Why projects are cool & useful
+* Various directory structures
+* Creating a new project
+* Using Git & GitHub for backup, version control, &
+sharing
+* Preview look at R packages
 
-```r
-summary(cars)
-```
+The GitHub _RStudio Projects_ repo is at https://github.com/ds4ci/rsProject
 
-```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
-```
-
-Slide With Plot
+Learning More
 ========================================================
 
-![plot of chunk unnamed-chunk-2](RStudio_Projects-figure/unnamed-chunk-2-1.png)
+* Garrett's Projects webinar: https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-change-part-1/ Note the first few minutes are IDE basics. Project discussion starts at ~ 13 minutes.
+* Garrett's Git/GitHub webinar: https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/
+* The RStudio IDE Cheat Sheet: https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
+* Google "R Project Structure" for various ideas on directory structure.
+* Jim's archives: https://ds4ci.org/archives/
+
+Thank You!
+=========================================================
+type: section
+
+Jim@DS4CI.org
