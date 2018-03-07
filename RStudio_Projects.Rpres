@@ -3,9 +3,9 @@ RStudio Projects
 autosize: true
 ## Oakland R Beginners
 
-Jim Porzak
+Jim Porzak, March 6, 2017
 
-March 6, 2017
+Project for this presentation at https://github.com/ds4ci/rsProject
 
 
 What We Will Cover
@@ -216,10 +216,11 @@ The GitHub _RStudio Projects_ repo is at https://github.com/ds4ci/rsProject
 Learning More
 ========================================================
 
-* Garrett's Projects webinar: https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-change-part-1/ Note the first few minutes are IDE basics. Project discussion starts at ~ 13 minutes.
+* Garrett's Projects webinar: https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-change-part-1/ Project discussion starts at ~ 13 minutes.
 * Garrett's Git/GitHub webinar: https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/
 * The RStudio IDE Cheat Sheet: https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf
 * Google "R Project Structure" for various ideas on directory structure.
+* Making _R Presentations: https://support.rstudio.com/hc/en-us/sections/200130218-R-Presentations
 * Jim's archives: https://ds4ci.org/archives/
 
 Thank You!
